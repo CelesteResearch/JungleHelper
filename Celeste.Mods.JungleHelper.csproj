@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>Celeste.Mods.JungleHelper</AssemblyName>
+        <RootNamespace>Celeste.Mods.JungleHelper</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference
+            Include="$(SharedRoot)/src/Celeste.Game.Runtime/Celeste.Game.Runtime.csproj"
+            Private="false"
+        />
+        <ProjectReference Include="../MaxHelpingHand/Celeste.Mods.MaxHelpingHand.csproj" Private="false" />
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="25.3.6" />
+    </ItemGroup>
+</Project>
